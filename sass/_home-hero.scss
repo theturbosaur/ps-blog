@@ -1,0 +1,18 @@
+.home-hero{
+	height:100%;
+	width:100%;
+	position:relative;
+	padding:2rem;
+
+	&__canvas{
+		@extend .canvas;
+		position:relative;
+	}
+
+	&__logo{
+		width:500px;
+		figure{
+			margin:0;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.ratio{
+	position:relative;
+//clear ratio//
+&--clear{
+	@extend .ratio;
+	&:after{
+		content:'';
+		display:none;
+	}
+}
+//1:1 ratio//
+&--square{
+	@extend .ratio;
+	&:after{
+		content:'';
+		display:block;
+		padding-bottom:100%;
+	}
+}
+
+&--double-square{
+	@extend .ratio;
+	&:after{
+		content:'';
+		display:block;
+		padding-bottom:60%;
+	}
+}
+}

@@ -1,0 +1,20 @@
+ @mixin breakpoint($point) {
+	 @if $point == iphonePlus {
+	    @media (min-width: 414px)  { @content ; }
+	  }
+	  @else if $point == ipad {
+	     @media (min-width: 768px) { @content ; }
+	  }
+	   @else if $point == ipadPro {
+	     @media (min-width: 1024px) { @content ; }
+	  }
+	   @else if $point == macbook {
+	     @media (min-width: 1366px) { @content ; }
+	  }
+	   @else if $point == iMac {
+	     @media (min-width: 1789px) { @content ; }
+	  }
+		@else if $point == iMac27 {
+	     @media (min-width: 2200px) { @content ; }
+	  }
+}
