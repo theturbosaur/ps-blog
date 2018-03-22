@@ -1,9 +1,18 @@
 .article{
     &__thumb{
-        @include breakpoint(tablet-portrait) {
+        margin:0;
+        position:relative;
+        overflow:hidden;
+        img{
+            transition: all 500ms ease-in-out;
         }
     }
     .title{
         @extend .paragraph;
+    }
+    &:hover{
+        img{
+            transform:scale(1.1);
+        }
     }
 }

@@ -1,3 +1,7 @@
+body{
+    color:$textGrey;
+}
+
 .heading-1{
     font-size:32px;
     @include breakpoint(tablet-portrait) {

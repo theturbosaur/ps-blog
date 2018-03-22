@@ -8,6 +8,9 @@
 	   @else if $point == tablet-portrait {
 	     @media (min-width: 1023px) { @content ; }
 	  }
+	  @else if $point == tablet-landscape {
+	     @media (min-width: 1260px) { @content ; }
+	  }
 	   @else if $point == desktop {
 	     @media (min-width: 1600px) { @content ; }
 	  }
