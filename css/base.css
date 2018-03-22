@@ -7,9 +7,22 @@ body {
   body h1, body h2, body h3, body h4, body h5, body h6 {
     margin-top: 0; }
 
-.grid {
+main {
+  grid-area: main;
+  background: #1f1f1f;
+  height: 100px; }
+
+aside {
+  grid-area: aside;
+  background: #eeeeee;
+  height: 100px; }
+
+.grid, section {
   display: grid;
-  width: 100%; }
+  width: 100%;
+  grid-template-columns: repeat 4;
+  grid-column-gap: 16px;
+  grid-template-areas: "main main main main" "aside aside aside aside"; }
 
 .heading-1 {
   font-size: 32px; }
