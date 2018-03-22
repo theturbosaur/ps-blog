@@ -1,13 +1,30 @@
 main{
     grid-area: main;
-    background:$deviceBlack;
     height:100px;
+    grid-column-start:1;
+    grid-column-end:5;
+    @include breakpoint(tablet-portrait) {
+        grid-column-start:1;
+        grid-column-end:13;
+    }
+    @include breakpoint(desktop) {
+        grid-column-start:1;
+        grid-column-end:10;
+     }
 }
 
 aside{
-    grid-area: aside;
-    background:$midSilver;
     height:100px;
+    grid-column-start:1;
+    grid-column-end:5;
+    @include breakpoint(tablet-portrait) {
+        grid-column-start:1;
+        grid-column-end:13;
+    }
+    @include breakpoint(desktop) {
+        grid-column-start:10;
+        grid-column-end:13;
+     }
 }
 
 
@@ -15,22 +32,32 @@ aside{
 .grid{
     display:grid;
     width:100%;
-    grid-template-columns: repeat 4;
+    margin:auto;
+    grid-template-columns: repeat(4, auto);
     grid-column-gap: 16px;
-    grid-template-areas: 
-        "main main main main"
-        "aside aside aside aside";
+    grid-auto-flow: row;
+    padding: 0 1rem;
+    box-sizing:border-box;
 
-     @mixin breakpoint($portrait-tablet) {
-        max-width:908px;
-        grid-template-columns: repeat 12;
+     @include breakpoint(tablet-portrait) {
+        max-width:700px;
+        grid-template-columns: repeat(12, 41px);
+        grid-column-gap: 16px;
+     }
+    @include breakpoint(tablet-landscape) {
+        max-width:980px;
+        grid-template-columns: repeat(12, 60px);
         grid-column-gap: 20px;
      }
-     @mixin breakpoint($desktop) {
-        max-width:1220px;
+     @include breakpoint(desktop) {
+        max-width:1260px;
+        grid-template-columns: repeat(12, 80px);
+        grid-column-gap: 16px;
      }
-     @mixin breakpoint($desktop-large) {
-        max-width:1460px;
+     @include breakpoint(desktop-large) {
+        max-width:1600px;
+        grid-template-columns: repeat(12, 100px);
+        grid-column-gap: 16px;
      }
 }
 

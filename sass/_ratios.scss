@@ -8,6 +8,7 @@
 		display:none;
 	}
 }
+
 //1:1 ratio//
 &--square{
 	@extend .ratio;
@@ -17,6 +18,17 @@
 		padding-bottom:100%;
 	}
 }
+
+//4:3 ratio//
+&--poster{
+	@extend .ratio;
+	&:after{
+		content:'';
+		display:block;
+		padding-top: (4 / 3) * 100%;
+	}
+}
+
 
 &--double-square{
 	@extend .ratio;

@@ -1,0 +1,31 @@
+.tag{
+    @extend .small;
+    padding:.5rem .75rem;
+    background:$lightSilver;
+    text-decoration:none;
+    color:$textGrey;
+    float:left;
+    margin:.25rem;
+    &:hover{
+        background:$highlightBlue;
+        color:$satinBlue;
+    }
+}
+
+.tag-list{
+    padding:0;
+    margin:0 -.25rem;
+    a{
+        display:inline-block;
+        @extend .tag;
+        li{
+            list-style-type:none;
+        }
+    }
+}
+
+.tag-container{
+    border-top: $keylineGrey solid 1px;
+    padding-top:1rem;
+
+}

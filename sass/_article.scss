@@ -1,0 +1,9 @@
+.article{
+    &__thumb{
+        @include breakpoint(tablet-portrait) {
+        }
+    }
+    .title{
+        @extend .paragraph;
+    }
+}

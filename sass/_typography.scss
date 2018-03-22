@@ -1,34 +1,35 @@
 .heading-1{
     font-size:32px;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:42px;
      }
 }
 
 .heading-2{
     font-size:28px;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:36px;
      }
 }
 
 .heading-3{
     font-size:24px;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:28px;
      }
 }
 
 .heading-4{
     font-size:20px;
-    @mixin breakpoint($portrait-tablet) {
+    margin-bottom:2rem;
+    @include breakpoint(tablet-portrait) {
         font-size:22px;
      }
 }
 
 .heading-5{
     font-size:17px;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:18px;
      }
 }
@@ -36,7 +37,7 @@
 .paragraph{
     font-size:15px;
     line-height:21px;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:16px;
         line-height:24px;
      }
@@ -45,7 +46,7 @@
 .small{
     font-size:13px;
     line-height:18xp;
-    @mixin breakpoint($portrait-tablet) {
+    @include breakpoint(tablet-portrait) {
         font-size:14px;
         line-height:20px
      }
