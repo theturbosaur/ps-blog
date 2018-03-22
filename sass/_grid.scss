@@ -1,8 +1,15 @@
 
-.canvas{
-	z-index:2;
-}
+.grid{
+    display:grid;
+    width:100%;
 
-.background{
-	z-index:1;
+     @mixin breakpoint($portrait-tablet) {
+        max-width:908px;
+     }
+     @mixin breakpoint($desktop) {
+        max-width:1220px;
+     }
+     @mixin breakpoint($desktop-large) {
+        max-width:1460px;
+     }
 }

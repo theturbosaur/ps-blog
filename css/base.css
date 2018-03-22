@@ -1,20 +1,38 @@
+html {
+  font-size: 15px; }
+
 body {
   margin: 0;
   font-family: 'arial'; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     margin-top: 0; }
 
-.canvas {
-  z-index: 2; }
+.grid {
+  display: grid;
+  width: 100%; }
 
-.background {
-  z-index: 1; }
+.heading-1 {
+  font-size: 32px; }
 
-.canvas {
-  z-index: 2; }
+.heading-2 {
+  font-size: 28px; }
 
-.background {
-  z-index: 1; }
+.heading-3 {
+  font-size: 24px; }
+
+.heading-4 {
+  font-size: 20px; }
+
+.heading-5 {
+  font-size: 17px; }
+
+.paragraph {
+  font-size: 15px;
+  line-height: 21px; }
+
+.small {
+  font-size: 13px;
+  line-height: 18xp; }
 
 .img-block {
   margin: 0;
