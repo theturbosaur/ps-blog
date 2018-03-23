@@ -2,6 +2,11 @@ body{
     color:$textGrey;
 }
 
+h1,h2,h3,h4,h5{
+    margin-bottom:2rem;
+}
+
+
 .heading-1{
     font-size:32px;
     @include breakpoint(tablet-portrait) {
@@ -49,11 +54,16 @@ body{
 
 .small{
     font-size:13px;
-    line-height:18xp;
+    line-height:18px;
     @include breakpoint(tablet-portrait) {
         font-size:14px;
         line-height:20px
      }
 }
+
+.list-title{
+        padding-top:2rem;
+        border-top:solid 1px $keylineGrey;
+    }
 
 

@@ -10,9 +10,37 @@
     .title{
         @extend .paragraph;
     }
+    span{
+        color:$textLightGrey;
+    }
     &:hover{
         img{
             transform:scale(1.1);
+        }
+        .title{
+            color:$satinBlue;
+        }
+    }
+}
+
+.article.featured{
+    &__thumb{
+        &:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: (9 / 16) * 100%;
+        }
+        @include breakpoint(mobile-landscape) {
+            width:100%;
+            margin-right:0;
+            margin-bottom:1rem;
+            &:before {
+                display: block;
+                content: "";
+                width: 100%;
+                padding-top: (3 / 4) * 100%;
+            }
         }
     }
 }
