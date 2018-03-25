@@ -379,6 +379,22 @@ h1, h2, h3, h4, h5 {
     .blog-nav ul li {
       list-style-type: none; }
 
+.spotlight {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100% repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1rem; }
+  @media (min-width: 1023px) {
+    .spotlight {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1023px) {
+    .spotlight {
+      display: block; } }
+
+.post__content p:first-child:first-letter {
+  font-size: 200%; }
+
 .ratio, .ratio--clear, .ratio--square, .ratio--poster, .ratio--double-square {
   position: relative; }
   .ratio--clear:after {
@@ -416,7 +432,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   margin: auto;
   display: grid;
-  grid-column-gap: 1rem;
+  grid-column-gap: 6rem;
   padding: 1rem;
   box-sizing: border-box; }
   @media (min-width: 1260px) {
@@ -434,4 +450,4 @@ h1, h2, h3, h4, h5 {
   .homepage-latest {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column-gap: 1rem; } }
+    grid-column-gap: 6rem; } }
