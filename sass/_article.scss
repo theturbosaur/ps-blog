@@ -5,10 +5,14 @@
         overflow:hidden;
         img{
             transition: all 500ms ease-in-out;
+            width:100%;
         }
     }
     .title{
         @extend .paragraph;
+    }
+    .subtitle{
+        color: $textLightGrey;
     }
     span{
         color:$textLightGrey;
@@ -20,27 +24,9 @@
         .title{
             color:$satinBlue;
         }
+        .subtitle{
+            color: $textGrey;
+        }
     }
 }
 
-.article.featured{
-    &__thumb{
-        &:before {
-            display: block;
-            content: "";
-            width: 100%;
-            padding-top: (9 / 16) * 100%;
-        }
-        @include breakpoint(mobile-landscape) {
-            width:100%;
-            margin-right:0;
-            margin-bottom:1rem;
-            &:before {
-                display: block;
-                content: "";
-                width: 100%;
-                padding-top: (3 / 4) * 100%;
-            }
-        }
-    }
-}
