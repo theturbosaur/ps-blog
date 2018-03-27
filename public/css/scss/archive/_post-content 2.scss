@@ -1,0 +1,10 @@
+.post__content{
+    p{
+        &:first-child{
+            &:first-letter{
+                font-size:200%;
+            }
+        }
+    }
+
+}
