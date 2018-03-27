@@ -1,0 +1,38 @@
+.featured-article{
+	width:calc(100% + 2rem);
+	height:100vw;
+	left:-1rem;
+	position:relative;
+	@include breakpoint(tablet-portrait) {
+		height:auto;
+		min-height:400px;
+		width:100%;
+		left:0;
+	}
+
+	.article__thumb{
+		height:100%;
+		width:100%;
+		img{
+			height:100%;
+			width:100%;
+			object-fit:cover;
+		}
+		@include breakpoint(tablet-portrait) {
+			position:absolute;
+		}
+	}
+
+	.article__info{
+		background:$satinBlue;
+		color: $white;
+		padding:1rem;
+		margin:0 1rem;
+		position:absolute;
+		bottom:-1rem;
+		@include breakpoint(tablet-portrait) {
+			position:relative;
+			width:25%;
+		}
+	}
+}

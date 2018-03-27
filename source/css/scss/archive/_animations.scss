@@ -1,0 +1,10 @@
+//zooms to anchor//
+@keyframes zoom-out--bottom-right {
+  0%   { transform:scale(1.05); }
+  100% { transform:scale(1);}
+}
+
+.zoom-out--bottom-right{
+	animation: zoom-out--bottom-right 1s forwards;
+	transform-origin:bottom right;
+}

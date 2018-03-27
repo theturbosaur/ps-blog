@@ -1,0 +1,19 @@
+html{
+    font-size:15px;
+    font-family:'Arial';
+    @mixin breakpoint($portrait-tablet) {
+        font-size:16px;
+     }
+}
+
+
+body{
+	margin:0;
+	font-family:'arial';
+
+	h1,h2,h3,h4,h5,h6{
+		margin-top:0;
+		font-weight:100;
+	}
+
+}
